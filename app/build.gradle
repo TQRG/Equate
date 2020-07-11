@@ -1,4 +1,13 @@
-apply plugin: 'com.android.application'
+buildscript {
+    repositories {
+        google()
+    }
+}
+
+plugins {
+    id 'com.android.application'
+    id 'tqrg.leafactor.ci' version "0.0.2"
+}
 
 allprojects {
     repositories {
@@ -8,6 +17,7 @@ allprojects {
         }
     }
 }
+
 
 android {
     compileSdkVersion 26
